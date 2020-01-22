@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "module": "commonjs",
+    "allowJs": true,
+    "types": ["jest"]
+  },
+  "files": [
+    "src/polyfills.ts"
+  ],
+
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "Angular8/tsconfig.spec.json"
+      }
+    }
+  },
+  "include": [
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts"
+  ]
+}
